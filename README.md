@@ -59,7 +59,7 @@ pd :
 
 ## 4.2 개발 일정
 
-- 을 해봅시다.
+https://www.notion.so/2377d23413b2809093a5e3658aba59ea?source=copy_link#2377d23413b2808c99a7e830a1284fb0
 
 # 5. 역할 분담
 
