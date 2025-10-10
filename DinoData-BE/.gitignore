@@ -1,16 +1,35 @@
-HELP.md
-.gradle
+### Build ###
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### STS ###
+### Spring Boot ###
+# Local configuration files (API keys, DB passwords, etc.)
+src/main/resources/application.properties
+src/main/resources/application-*.properties
+
+# Log files
+*.log
+
+### Docker ###
+# Ignore Docker-related temp files and volumes
+mysql_data/
+docker/mysql/data/
+docker/mysql/logs/
+docker/mysql/conf.d/
+.docker/
+
+# Environment variables file
+.env
+
+### STS / Eclipse ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 bin/
@@ -18,7 +37,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -36,6 +55,6 @@ out/
 ### VS Code ###
 .vscode/
 
-### Application Properties (보안 정보 보호) ###
-src/main/resources/application.properties
-src/main/resources/application-*.properties
+### OS files ###
+.DS_Store
+Thumbs.db
